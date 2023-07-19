@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/* || Reset Styles */
+
+::before,
+::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  scroll-behavior: smooth;
+}
+
+/* || Container Styles */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+  padding: 1.5em 1em;
+}
+
+/* || Header Styles */
+
+.header-h1 {
+  color: #4e5150;
+}
+
+/* || Main Styles */
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "main-sec1"
+    "main-sec2";
+  margin-top: 1.5em;
+}
+
+/* || The First Section Styles */
+
+.main-sec1 {
+  grid-area: main-sec1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(140px, 140px));
+  grid-template-areas:
+    "item-cart1"
+    "item-cart2"
+    "products-cost";
+  background-color: #f2f2f2;
+  height: fit-content;
+  gap: 3em;
+  padding: 2em;
+  border-radius: 0.8em;
+  -webkit-box-shadow: 1px 2px 29px -8px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 2px 29px -8px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 29px -8px rgba(0, 0, 0, 0.4);
+}
+
+.item-cart1 {
+  grid-area: item-cart1;
+}
+
+.item-cart2 {
+  grid-area: item-cart2;
+}
+
+.items-cart {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.items-cart img {
+  max-width: calc(130px + 4vw);
+  max-height: 150px;
+  border-radius: 1em;
+}
+
+.left-items {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  min-width: 145px;
+  height: 200px;
+  color: #4e5150;
+}
+
+.price {
+  margin-top: 1em;
+  display: flex;
+}
+
+.before-dis {
+  font-size: 0.8rem;
+  margin-left: 1.5em;
+  text-decoration: line-through;
+}
+
+.after-dis {
+  color: #f2994a;
+}
+
+.product-count {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid #828282;
+  padding: 0.8em;
+  border-radius: 1em;
+}
+
+.product-count p {
+  font-size: 1.6rem;
+}
+
+.fa-minus,
+.fa-plus {
+  background-color: #e0e0e0;
+  color: #828282;
+  padding: 0.5em;
+  border-radius: 0.4em;
+}
+
+.fa-minus:hover,
+.fa-plus:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+.products-cost {
+  grid-area: products-cost;
+  margin-top: 2em;
+}
+
+.cost {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #bdbdbd;
+  padding: 1em 0;
+  font-size: 1.2rem;
+}
+
+/* || The Second Section Styles */
+
+.main-sec2 {
+  grid-area: main-sec2;
+}
+
+.fieldsets,
+input {
+  border: none;
+}
+
+.field-title {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.fieldsets p {
+  margin-top: 1em;
+  margin-left: 0.2em;
+  color: #4f4f4f;
+  font-size: 0.8rem;
+}
+
+.inputs {
+  border: 1px solid #828282;
+  border-radius: 0.6em;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  margin-top: 0.4em;
+}
+
+.inputs:hover {
+  border: 1px solid blue;
+}
+
+.main-sec2 .fa-solid {
+  color: #828282;
+  font-size: 1.2rem;
+}
+
+input {
+  margin-left: 1em;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.shipping-field {
+  margin-top: 4em;
+}
+
+.last-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-inputs div {
+  margin-left: 0.2em;
+  color: #4f4f4f;
+  font-size: 0.8rem;
+}
+
+.last-inputs select {
+  margin-left: 1em;
+  border: none;
+  background-color: #fff;
+}
+
+.save input {
+  width: 1rem;
+  height: 1rem;
+  margin: 1em 0 0.5em 0.5em;
+}
+
+.save label {
+  color: #4f4f4f;
+  font-size: 0.8rem;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-container::before {
+  display: block;
+  content: "";
+}
+
+.submit-btn {
+  padding: 0.8em 2.2em;
+  font-size: 1.4rem;
+  border-radius: 1em;
+  background-color: #f2994a;
+  color: #fff;
+  border: none;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+
+/* || Footer Styles */
+
+.footer {
+  margin: 4em 0 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #828282;
+}
+
+@media (min-width: 556px) {
+  body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 65%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 1000px;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "main-sec2 main-sec1";
+    margin-top: 1.5em;
+  }
+
+  .main-sec1 {
+    max-height: 70%;
+    max-width: 450px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 3em;
+    gap: 4em;
+  }
+
+  .main-sec2 {
+    max-width: 85%;
+  }
+}

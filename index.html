@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/19dca637d9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Checkout Page Master Challenge</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <header>
+        <h1 class="header-h1">Checkout</h1>
+      </header>
+
+      <main class="main">
+        <section class="main-sec1">
+
+          <div class="items-cart item-cart1">
+            <img src="./images/photo1.png" alt="Vintage Backbag Image" />
+            <div class="left-items">
+              <div>
+                <p class="product-name">Vintage Backbag</p>
+                <div class="price">
+                  <p class="after-dis">$54.99</p>
+                  <p class="before-dis">$94.99</p>
+                </div>
+              </div>
+              <div class="product-count">
+                <i class="fa-solid fa-minus"></i>
+                <p>1</p>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-cart item-cart2">
+            <img src="./images/photo2.png" alt="Levi Shoes Image" />
+            <div class="left-items">
+              <div>
+                <p class="product-name">Levi Shoes</p>
+                <div class="price">
+                  <p class="after-dis">$74.99</p>
+                  <p class="before-dis">$124.99</p>
+                </div>
+              </div>
+              <div class="product-count">
+                <i class="fa-solid fa-minus"></i>
+                <p>1</p>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="products-cost">
+            <div class="cost">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+            <div class="cost">
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="main-sec2">
+          <form action="" method="get">
+
+            <fieldset class="contact-field fieldsets">
+              <legend class="field-title">Contact infomation</legend>
+
+              <p>
+                <label for="email">E-mail</label>
+                <div class="inputs">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email..."
+                  pattern="^[a-zA-Z0-9]*\.[a-zA-Z0-9]*@gmail\.com$"
+                  required
+                />
+                </div>
+              </p>
+
+              <p>
+                <label for="phone">Phone</label>
+                <div class="inputs">
+                  <i class="fa-solid fa-phone"></i>
+                  <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone..."
+                  pattern="[0-9]{3}[0-9]{4}[0-9]{4}"
+                  required
+                />
+                </div>
+              </p>
+
+
+            </fieldset>
+
+            <fieldset class="shipping-field fieldsets">
+              <legend class="field-title">Shipping address</legend>
+
+
+              <p>
+                <label for="fullname">Full name</label>
+                <div class="inputs">
+                  <i class="fa-solid fa-circle-user"></i>
+                  <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  placeholder="Ex: Rodney Cotton"
+                  required
+                />
+                </div>
+              </p>
+
+              <p>
+                <label for="address">Address</label>
+                <div class="inputs">
+                  <i class="fa-solid fa-house"></i>
+                  <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Your address.."
+                  required
+                />
+                </div>
+              </p>
+
+
+              <p>
+                <label for="city">City</label>
+                <div class="inputs">
+                  <i class="fa-solid fa-city"></i>
+                  <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  placeholder="Your city.."
+                  required
+                />
+                </div>
+              </p>
+
+
+              <div class="last-inputs">
+
+                <div class="inputs-last">
+                  <label for="country">Country</label>
+                  <div class="inputs">
+                    <i class="fa-solid fa-city"></i>
+                    <select name="country" id="country">
+                      <option value="United States">United States</option>
+                      <option value="Australia">Australia</option>
+                      <option value="Canada">Canada</option>
+                    </select>
+                  </div>
+                </div>
+  
+                
+                <div class="inputs-last">
+                  <label for="postalcode">Postal code</label>
+                  <div class="inputs">
+                    <i class="fa-solid fa-inbox"></i>
+                    <input
+                    type="text"
+                    name="postalcode"
+                    id="postalcode"
+                    placeholder="Your Postal code.."
+                    pattern="[0-9]{5,7}"
+                    required
+                  />
+                  </div>
+                </div>
+
+              </div>
+
+              <p>
+                <div class="save">
+                  <input
+                  type="checkbox"
+                  name="save"
+                  id="save"
+                  value="saveinformations"
+                />
+                <label for="save">Save this information for next time</label>
+                </div>
+              </p>
+
+            </fieldset>
+
+            <div class="submit-container">  
+              <button type="submit" class="submit-btn">Continue</button>
+            </div>
+          </form>
+        </section>
+      </main>
+      
+    </div>
+
+    <footer class="footer">
+      <p>Created By Ammar - devChallenges.io</p>
+    </footer>
+  </body>
+</html>
